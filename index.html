@@ -11,8 +11,17 @@
     />
   </head>
   <body>
-    <!-- header placeholder (will be filled by js) -->
-    <div id="header-placeholder"></div>
+    <!-- Header -->
+    <header class="navbar">
+      <nav>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="#">Learnings</a></li>
+          <li><a href="#">Events</a></li>
+        </ul>
+      </nav>
+    </header>
 
     <!-- Hero Section -->
     <section class="hero">
@@ -29,7 +38,7 @@
         <a href="#" class="btn">Download Resume</a>
       </div>
       <div class="hero-img">
-        <img src="Profile.jpeg" alt="Kritika's profile image" />
+        <img src="/Profile.jpeg" alt="Kritika's profile image" />
       </div>
     </section>
 
@@ -38,69 +47,9 @@
       <div class="section-header">
         <h2>Work Experience</h2>
       </div>
-
-      <div class="experience-grid">
-        <div class="experience-card">
-          <h3>Operation Associate</h3>
-          <p class="meta">
-            Nov 2024 - Present &nbsp; | &nbsp;
-            <a
-              href="https://www.linkedin.com/company/karmaops/posts/?feedView=all"
-              target="_blank"
-              rel="noopener noreferrer"
-              >KarmaOps</a
-            >
-          </p>
-          <p class="desc">
-            As a Operation Associate, I work in Quality Assurance (QA) as a part
-            of MarginGeek, I ensured the accuracy and profitability.....
-          </p>
-          <div class="view-more">
-            <a href="operation-associate.html">View more</a>
-          </div>
-        </div>
-
-        <div class="experience-card">
-          <h3>Content Creator</h3>
-          <p class="meta">
-            Apr 2023 - Oct 2024 &nbsp; | &nbsp;
-            <a href="https://www.biblionepal.com/" target="_blank"
-              >Biblionepal</a
-            >
-          </p>
-          <p class="desc">
-            As a Content Creator at Biblionepal, a local bookstore, I was
-            responsible for crafting engaging and visually appealing
-            content.....
-          </p>
-          <div class="view-more">
-            <a href="content-creator.html">View more</a>
-          </div>
-        </div>
-
-        <div class="experience-card">
-          <h3>Frontend Developer Intern</h3>
-          <p class="meta">
-            Jan 2024 - Apr 2024 &nbsp; | &nbsp;
-            <a
-              href="https://www.linkedin.com/company/darsetech/"
-              target="_blank"
-              >Darse Technologies
-            </a>
-          </p>
-          <p class="desc">
-            During my frontend development internship, I worked on multiple
-            real-world projects that involved building interactive user
-            interfaces.....
-          </p>
-          <div class="view-more">
-            <a href="frontend-intern.html">View more</a>
-          </div>
-        </div>
-      </div>
+      <div class="experience-grid" id="experience-grid"></div>
     </section>
 
-    <!-- Blog intro -->
     <section class="blog-intro">
       <div class="blog-content">
         <div class="section-header">
@@ -124,8 +73,25 @@
       </div>
     </section>
 
-    <div id="footer-placeholder"></div>
-
-    <script src="js/include.js"></script>
+    <footer class="footer">
+      <div class="social-icons">
+        <a
+          href="https://www.linkedin.com/in/kritika-chaudhary/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <i class="fab fa-linkedin-in"></i>
+        </a>
+        <a
+          href="https://github.com/kre-tikaa"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <i class="fab fa-github"></i>
+        </a>
+      </div>
+      <p>Copyright ©2025 All rights reserved</p>
+    </footer>
+    <script src="js/experience.js"></script>
   </body>
 </html>
