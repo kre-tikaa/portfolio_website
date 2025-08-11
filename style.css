@@ -33,6 +33,10 @@ body {
   font-size: 16px;
 }
 
+.navbar a:hover {
+  color: #ff4c4c;
+}
+
 /* Hero Section */
 .hero {
   display: flex;
