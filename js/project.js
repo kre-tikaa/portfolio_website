@@ -7,7 +7,7 @@ const projects = [
     category: "Hands-on Labs and Case Studies",
     description:
       "This project is a compilation of hands-on cybersecurity labs completed during the Cisco Cyber Threat Management course. It covers the full spectrum of threat management from policy creation and compliance mapping to digital forensics, incident response, vulnerability assessment, and disaster recovery planning.",
-    link: "project-details1.html",
+    link: "projectDetails1.html",
     linkText: "View more",
   },
   {

@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Content Creator</title>
+    <title>Kritika Chaudhary</title>
     <link rel="stylesheet" href="style.css" />
     <link
       rel="stylesheet"
@@ -11,18 +11,19 @@
     />
   </head>
   <body>
-    <!-- Navbar -->
+    <!-- Header -->
     <header class="navbar">
       <nav>
         <ul>
-          <li><a href="index.html">Home</a></li>
+          <li><a href="#">Home</a></li>
           <li><a href="projects.html">Projects</a></li>
           <li><a href="#">Learnings</a></li>
           <li><a href="#">Events</a></li>
         </ul>
       </nav>
     </header>
-    <section class="project-list"></section>
+
+    <section id="project-container-2"></section>
 
     <footer class="footer">
       <div class="social-icons">
@@ -43,12 +44,6 @@
       </div>
       <p>Copyright ©2025 All rights reserved</p>
     </footer>
-    <script type="module">
-      import {
-        renderProject,
-        operationAssociate,
-      } from "./js/renderWorkExperience.js";
-      renderProject(operationAssociate, "project-list");
-    </script>
+    <script type="module" src="./js/renderProject.js"></script>
   </body>
 </html>
