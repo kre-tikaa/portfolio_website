@@ -113,7 +113,7 @@ Nodejs`,
     projects: [
       {
         title:
-          "Joshinani Project - Enhancing restaurant visibility through modern web development and content management",
+          "Joshinani Project - Enhancing restaurant visibility through web development and content management",
         year: "2024",
         category: "Strapi & OpenGraph Implementation",
         responsibilities: [
@@ -217,6 +217,7 @@ function renderWorkExperience(contentKey) {
   const softDiv = document.createElement("div");
   softDiv.style.margin = "2rem 0 2rem 0";
   softDiv.innerHTML = `
+    <hr class="divider"/>
     <h3>Soft Skills Gained:</h3>
     <p>${content.softSkills}</p>
     <h3>Technical Skills Gained:</h3>
@@ -230,7 +231,8 @@ function renderWorkExperience(contentKey) {
     const respDiv = document.createElement("div");
     respDiv.classList.add("project-item");
 
-    let responsibilitiesHTML = "<h4>Key Responsibilites</h4><ul>";
+    let responsibilitiesHTML =
+      '    <hr class="divider"/><h4>Key Responsibilites</h4><ul>';
     content.responsibilities.forEach((section) => {
       responsibilitiesHTML += `<li><strong>${section.title}</strong><ul>`;
       section.points.forEach((point) => {
@@ -242,6 +244,7 @@ function renderWorkExperience(contentKey) {
 
     respDiv.innerHTML = `
       ${responsibilitiesHTML}
+      <hr class="divider"/>
       <h4>Work Snap</h4>
       <img src="${content.workSnap.src}" alt="${content.workSnap.alt}" style="${content.workSnap.style}" />
     `;
@@ -253,10 +256,12 @@ function renderWorkExperience(contentKey) {
     respDiv.classList.add("project-item");
 
     const responsibilitiesHTML = `
+      <hr class="divider"/>
       <h4>Key Responsibilites</h4>
       <ul>
         ${content.responsibilities.map((item) => `<li>${item}</li>`).join("")}
       </ul>
+      <hr class="divider"/>
       <h4>Impact and Achievement</h4>
       <ul>
         ${content.impactAchievement.map((item) => `<li>${item}</li>`).join("")}
@@ -281,6 +286,7 @@ function renderWorkExperience(contentKey) {
       });
 
       projDiv.innerHTML = `
+        <hr class="divider"/>
         <h3>${project.title}</h3>
         <div class="project-meta">
           <span class="year">${project.year}</span>
@@ -299,7 +305,8 @@ function renderWorkExperience(contentKey) {
     const challengesDiv = document.createElement("div");
     challengesDiv.classList.add("project-item");
 
-    let challengesHTML = "<h3>Challenges Faced & How I Solved Them</h3><ul>";
+    let challengesHTML =
+      '<hr class="divider"/><h3>Challenges Faced & How I Solved Them</h3><ul>';
     content.challenges.forEach((challenge) => {
       challengesHTML += `<li><strong>${challenge.title}:</strong> ${challenge.description}</li>`;
     });
