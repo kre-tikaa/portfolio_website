@@ -19,10 +19,9 @@ function renderProject(content, containerSelector) {
   if (content.introParagraph || content.softSkills || content.technicalSkills) {
     const intro = document.createElement("p");
     intro.textContent = content.introParagraph || "";
-    intro.style.marginBottom = "2rem";
 
     const skillsDiv = document.createElement("div");
-    skillsDiv.style.margin = "2rem 0";
+    skillsDiv.style.margin = "2rem 0 0";
     skillsDiv.innerHTML = `
       <hr class="divider"/>
       ${

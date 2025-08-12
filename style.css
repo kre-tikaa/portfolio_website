@@ -266,19 +266,15 @@ body {
 
 .project-item {
   display: flex;
-  margin-bottom: 50px;
   align-items: flex-start;
   flex-wrap: wrap;
   flex-direction: column;
+  margin-bottom: 20px;
 }
 
 .project-item h4 {
   margin-top: 1rem;
   margin-bottom: 1rem;
-}
-
-.project-item ul {
-  margin-bottom: 2rem;
 }
 
 .project-item ul li {
@@ -354,7 +350,16 @@ body {
 .divider {
   border: none;
   height: 2px;
-  background-color: #ff4c4c;
+  background-color: #b8a6a6;
   margin: 20px 0;
   width: 100%;
+}
+
+.module-list {
+  margin-top: 2rem;
+}
+
+.module-list a {
+  text-decoration: underline;
+  color: #ff6b6b;
 }
