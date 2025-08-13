@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Kritika Chaudhary</title>
+    <title>Cisco Cyber Threat Management - Project Labs</title>
     <link rel="stylesheet" href="style.css" />
     <link
       rel="stylesheet"
@@ -23,7 +23,7 @@
       </nav>
     </header>
 
-    <section id="project-container"></section>
+    <section class="project-list"></section>
 
     <footer class="footer">
       <div class="social-icons">
@@ -44,6 +44,9 @@
       </div>
       <p>Copyright ©2025 All rights reserved</p>
     </footer>
-    <script type="module" src="./js/renderProject.js"></script>
+    <script type="module">
+      import { renderProject, projectDetails1 } from "./js/renderProject.js";
+      renderProject(projectDetails1, "project-list");
+    </script>
   </body>
 </html>

@@ -15,8 +15,8 @@ const projects = [
     year: 2025,
     category: "Hands-on Labs and Case Studies",
     description:
-      "Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.",
-    link: "#projects",
+      "This project is a compilation of hands-on networking labs completed during the Cisco Networking Basics course. It covers foundational concepts such as IP addressing, LAN/WAN configuration, routing, and essential network services like DHCP, NAT, HTTP, and FTP.",
+    link: "projectDetails2.html",
     linkText: "View more",
   },
   {
@@ -24,8 +24,8 @@ const projects = [
     year: 2025,
     category: "Hands-on Labs and Case Studies",
     description:
-      "Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.",
-    link: "#projects",
+      "This project contains a series of hands-on security documentation projects and technical exercises completed as part of the Google Cybersecurity Certificate program. Each file demonstrates applied skills in areas like risk assessment, incident response, SQL filtering, Linux security, and automation using Python.",
+    link: "projectDetails3.html",
     linkText: "View More",
   },
 ];

@@ -1,6 +1,6 @@
 // projectdetails1.js
 export const projectDetails1 = {
-  title: "Project Details",
+  title: "Cisco Cyber Threat Management - Project Labs",
   description: [
     `This project is a compilation of hands-on cybersecurity labs completed during the Cisco Cyber Threat Management course. It covers the full spectrum of threat management from policy creation and compliance mapping to digital forensics, incident response, vulnerability assessment, and disaster recovery planning.`,
     `The labs are structured into six modules, each focusing on a specific domain of cybersecurity. These projects simulate real-world scenarios faced by security analysts, incident responders, and governance officers, providing practical experience with industry tools, frameworks, and best practices.`,
@@ -93,12 +93,15 @@ export const projectDetails1 = {
     "Enhanced threat detection capabilities by mapping malware behavior to MITRE ATT&CK tactics, enabling more accurate incident classification.",
   ],
   images: [
-    { title: "Wireshark", src: "./project-details-img/Picture1.png" },
+    {
+      title: "Security Controls Sample",
+      src: "./project-details-img/Picture1.png",
+    },
+    { title: "Malware Analysis", src: "./project-details-img/Picture3.png" },
     {
       title: "VirusTotal",
       src: "./project-details-img/Picture2.png",
       fullWidth: true,
     },
-    { title: "Risk Analysis", src: "./project-details-img/Picture3.png" },
   ],
 };
