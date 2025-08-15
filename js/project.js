@@ -50,7 +50,6 @@ function generateProjects() {
           <a href="${project.link}">${project.linkText}</a>
         </div>
         </div>
-        <hr class="divider"/>
     `;
 
     container.appendChild(projectItem);

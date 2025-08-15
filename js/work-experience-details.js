@@ -67,9 +67,8 @@ management`,
   },
 
   contentCreator: {
-    introParagraph: `As a Content Creator at Biblionepal, a local bookstore, I was
-responsible for crafting engaging and visually appealing content to
-promote books and reading culture. My role combined creativity,
+    introParagraph: `As a Content Creator at Biblionepal, I was
+responsible for crafting engaging and visually appealing content. My role combined creativity,
 research, and audience interaction to produce social media content that
 resonated with book lovers and strengthened the store’s online presence.`,
 
@@ -96,11 +95,8 @@ resonated with book lovers and strengthened the store’s online presence.`,
 
   frontendIntern: {
     introParagraph: `During my frontend development internship, I worked on multiple
-real-world projects that involved building interactive user interfaces,
-managing content, and optimizing web performance. My contributions
-spanned across different areas of frontend development, including
-integrating headless CMS for dynamic content management, implementing
-SEO enhancements, and building data-driven visual tools. Below are the
+real-world projects for upgrading my skills related to coding that involved building interactive user interfaces,
+buidling data driven visual tools and integrating headless CMS for dynamic content management. Below are the
 key projects I contributed to Joshinani Web Application and the
 Visualization Toolkit along with my roles and responsibilities in each.`,
 
@@ -196,123 +192,3 @@ Nodejs`,
     ],
   },
 };
-
-// Render function
-function renderWorkExperience(contentKey) {
-  const content = workExperienceData[contentKey];
-  const container = document.querySelector(".project-list");
-  container.innerHTML = ""; // clear previous content
-
-  const heading = document.createElement("h2");
-  heading.textContent = "Work Details";
-  container.appendChild(heading);
-
-  // Intro paragraph
-  const intro = document.createElement("p");
-  intro.textContent = content.introParagraph;
-  intro.style.marginBottom = "2rem";
-  container.appendChild(intro);
-
-  // Soft Skills
-  const softDiv = document.createElement("div");
-  softDiv.style.margin = "2rem 0 2rem 0";
-  softDiv.innerHTML = `
-    <hr class="divider"/>
-    <h3>Soft Skills Gained:</h3>
-    <p>${content.softSkills}</p>
-    <h3>Technical Skills Gained:</h3>
-    <p>${content.technicalSkills}</p>
-  `;
-  container.appendChild(softDiv);
-
-  // Specific rendering logic per content type
-  if (contentKey === "operationAssociate") {
-    // Responsibilities with nested lists
-    const respDiv = document.createElement("div");
-    respDiv.classList.add("project-item");
-
-    let responsibilitiesHTML =
-      '    <hr class="divider"/><h4>Key Responsibilites</h4><ul>';
-    content.responsibilities.forEach((section) => {
-      responsibilitiesHTML += `<li><strong>${section.title}</strong><ul>`;
-      section.points.forEach((point) => {
-        responsibilitiesHTML += `<li>${point}</li>`;
-      });
-      responsibilitiesHTML += "</ul></li>";
-    });
-    responsibilitiesHTML += "</ul>";
-
-    respDiv.innerHTML = `
-      ${responsibilitiesHTML}
-      <hr class="divider"/>
-      <h4>Work Snap</h4>
-      <img src="${content.workSnap.src}" alt="${content.workSnap.alt}" style="${content.workSnap.style}" />
-    `;
-
-    container.appendChild(respDiv);
-  } else if (contentKey === "contentCreator") {
-    // Responsibilities and Impact & Achievement lists
-    const respDiv = document.createElement("div");
-    respDiv.classList.add("project-item");
-
-    const responsibilitiesHTML = `
-      <hr class="divider"/>
-      <h4>Key Responsibilites</h4>
-      <ul>
-        ${content.responsibilities.map((item) => `<li>${item}</li>`).join("")}
-      </ul>
-      <hr class="divider"/>
-      <h4>Impact and Achievement</h4>
-      <ul>
-        ${content.impactAchievement.map((item) => `<li>${item}</li>`).join("")}
-      </ul>
-    `;
-    respDiv.innerHTML = responsibilitiesHTML;
-    container.appendChild(respDiv);
-  } else if (contentKey === "frontendIntern") {
-    // Projects
-    content.projects.forEach((project) => {
-      const projDiv = document.createElement("div");
-      projDiv.classList.add("project-item");
-
-      const respHTML = project.responsibilities
-        .map((item) => `<li>${item}</li>`)
-        .join("");
-
-      let snapsHTML = "";
-      project.workSnap.forEach((img) => {
-        const style = img.style ? `style="${img.style}"` : "";
-        snapsHTML += `<img src="${img.src}" alt="${img.alt}" ${style} />`;
-      });
-
-      projDiv.innerHTML = `
-        <hr class="divider"/>
-        <h3>${project.title}</h3>
-        <div class="project-meta">
-          <span class="year">${project.year}</span>
-          <span class="category">${project.category}</span>
-        </div>
-        <h4>Key Responsibilites</h4>
-        <ul>${respHTML}</ul>
-        <h4>Work Snap</h4>
-        <div>${snapsHTML}</div>
-      `;
-
-      container.appendChild(projDiv);
-    });
-
-    // Challenges
-    const challengesDiv = document.createElement("div");
-    challengesDiv.classList.add("project-item");
-
-    let challengesHTML =
-      '<hr class="divider"/><h3>Challenges Faced & How I Solved Them</h3><ul>';
-    content.challenges.forEach((challenge) => {
-      challengesHTML += `<li><strong>${challenge.title}:</strong> ${challenge.description}</li>`;
-    });
-    challengesHTML += "</ul>";
-
-    challengesDiv.innerHTML = challengesHTML;
-    container.appendChild(challengesDiv);
-  }
-}

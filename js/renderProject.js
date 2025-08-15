@@ -70,7 +70,7 @@ function renderProject(content, containerSelector) {
   // Render Tools
   if (content.tools && Array.isArray(content.tools)) {
     const toolsDiv = document.createElement("div");
-    toolsDiv.classList.add("project-item");
+    toolsDiv.classList.add("work-item");
     toolsDiv.innerHTML = `
       <hr class="divider"/>
       <h3>Tools & Framework Used</h3>
@@ -82,7 +82,7 @@ function renderProject(content, containerSelector) {
   // Render Insights
   if (content.insights && Array.isArray(content.insights)) {
     const insightsDiv = document.createElement("div");
-    insightsDiv.classList.add("project-item");
+    insightsDiv.classList.add("work-item");
     insightsDiv.innerHTML = `
       <hr class="divider"/>
       <h3>Output / Insight</h3>
@@ -94,7 +94,7 @@ function renderProject(content, containerSelector) {
   // Render Work Snaps
   if (content.images && Array.isArray(content.images)) {
     const imagesDiv = document.createElement("div");
-    imagesDiv.classList.add("project-item");
+    imagesDiv.classList.add("work-item");
     let imagesHTML = '<hr class="divider"/><h3>Work Snap</h3>';
     content.images.forEach((img) => {
       imagesHTML += `

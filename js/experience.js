@@ -6,8 +6,10 @@ const experiences = [
     period: "Nov 2024 - Present",
     company: "KarmaOps",
     companyUrl: "https://www.linkedin.com/company/karmaops/posts/?feedView=all",
-    description:
-      "As a Operation Associate, I work in Quality Assurance (QA) as a part of MarginGeek, I ensured the accuracy and profitability.....",
+    description: `As a Operation Associate, I work in Quality Assurance (QA) as a part of
+MarginGeek, I ensured the accuracy and profitability of product leads by
+conducting detailed product matching, data verification, and
+profitability analysis.`,
     moreLink: "operation-associate.html",
   },
   {
@@ -15,8 +17,7 @@ const experiences = [
     period: "Apr 2023 - Oct 2024",
     company: "Biblionepal",
     companyUrl: "https://www.biblionepal.com/",
-    description:
-      "As a Content Creator at Biblionepal, a local bookstore, I was responsible for crafting engaging and visually appealing content.....",
+    description: `As a Content Creator at Biblionepal, I was responsible for crafting engaging and visually appealing content. My role combined creativity, research, and audience interaction to produce social media content that resonated with book lovers and strengthened the store’s online presence.`,
     moreLink: "content-creator.html",
   },
   {
@@ -24,8 +25,9 @@ const experiences = [
     period: "Jan 2024 - Apr 2024",
     company: "Darse Technologies",
     companyUrl: "https://www.linkedin.com/company/darsetech/",
-    description:
-      "During my frontend development internship, I worked on multiple real-world projects that involved building interactive user interfaces.....",
+    description: `During my frontend development internship, I worked on multiple
+real-world projects for upgrading my skills related to coding that involved building interactive user interfaces,
+buidling data driven visual tools and integrating headless CMS for dynamic content management.`,
     moreLink: "frontend-intern.html",
   },
   // Add more experience objects here as needed

@@ -88,9 +88,11 @@ export const projectDetails1 = {
     "Linux Terminal for log analysis",
   ],
   insights: [
-    "Strengthened policy adoption and compliance by creating clear, actionable security policies.",
+    "Created governance and compliance policy documentation aligned with industry standards",
     "Improved network security posture by identifying risks in unencrypted Telnet sessions and implementing SSH as a secure alternative.",
+    "Collected and analyzed threat intelligence from multiple sources, enhancing early detection of malicious indicators",
     "Enhanced threat detection capabilities by mapping malware behavior to MITRE ATT&CK tactics, enabling more accurate incident classification.",
+    "Developed risk management strategies and mapped security controls to NIST standards, strengthening defense posture against simulated threats",
   ],
   images: [
     {

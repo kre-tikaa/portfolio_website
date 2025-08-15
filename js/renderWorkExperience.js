@@ -43,7 +43,7 @@ function renderProject(content, containerSelector) {
   // Render responsibilities
   if (content.responsibilities) {
     const respDiv = document.createElement("div");
-    respDiv.classList.add("project-item");
+    respDiv.classList.add("work-item");
 
     if (
       Array.isArray(content.responsibilities) &&
@@ -77,7 +77,7 @@ function renderProject(content, containerSelector) {
   // Render impactAchievement if any
   if (content.impactAchievement) {
     const impactDiv = document.createElement("div");
-    impactDiv.classList.add("project-item");
+    impactDiv.classList.add("work-item");
     impactDiv.innerHTML = `
       <hr class="divider"/>
       <h4>Impact and Achievement</h4>
@@ -92,7 +92,7 @@ function renderProject(content, containerSelector) {
   if (content.projects && Array.isArray(content.projects)) {
     content.projects.forEach((project) => {
       const projDiv = document.createElement("div");
-      projDiv.classList.add("project-item");
+      projDiv.classList.add("work-item");
 
       const respHTML = project.responsibilities
         .map((item) => `<li>${item}</li>`)
@@ -125,7 +125,7 @@ function renderProject(content, containerSelector) {
   // Render single workSnap if present
   if (content.workSnap && !Array.isArray(content.workSnap)) {
     const snapDiv = document.createElement("div");
-    snapDiv.classList.add("project-item");
+    snapDiv.classList.add("work-item");
     snapDiv.innerHTML = `
       <hr class="divider"/>
       <h4>Work Snap</h4>
@@ -137,7 +137,7 @@ function renderProject(content, containerSelector) {
   // Render challenges if present
   if (content.challenges && Array.isArray(content.challenges)) {
     const challengesDiv = document.createElement("div");
-    challengesDiv.classList.add("project-item");
+    challengesDiv.classList.add("work-item");
     let challengesHTML =
       '<hr class="divider"/><h3>Challenges Faced & How I Solved Them</h3><ul>';
     content.challenges.forEach((challenge) => {

@@ -80,9 +80,10 @@ export const projectDetails2 = {
     "Packet Tracer Simulation Mode",
   ],
   insights: [
+    "Configured wireless routers and DHCP settings to automate IP address assignments, reducing manual configuration time",
     "Identified End devices and Router's MAC address and IP address for different network communication",
     "Improved troubleshooting skills by identifying DNS issues and fixing connectivity errors.",
-    "Developed an understanding of packet flow and ARP behavior in routed and unrouted environments.",
+    "Built and tested LAN environments with multiple devices, achieving 100% connectivity verification through ping and traceroute tests",
     "Gained practical experience configuring DHCP, HTTP, and FTP services.",
   ],
   images: [
